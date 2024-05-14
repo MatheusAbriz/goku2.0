@@ -1,0 +1,55 @@
+/*CONFIGURACOES GERAIS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MENU*/
+.navbar-expand-lg{
+    padding: .5rem 2rem !important;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+}
+
+/*CAROUSEL*/
+.carousel-item{
+    height: 662px;
+}
+
+.carousel-indicators{
+    bottom: 45px !important;
+}
+
+/*CARDS*/
+#area-cards{
+    padding-top: 8rem;
+}
+
+.linha{
+    margin-top: 2rem;
+}
+
+.card{
+    border-radius: 40px !important;
+    transition: all ease-in-out 350ms;
+}
+
+.card img{
+    border-radius: 40px 40px 0 0;
+    width: 100%;
+    max-width: 362px;
+    height: 200px;
+}
+
+.card:hover{
+    transform: translate(30px) rotate(3deg);
+    -webkit-box-shadow: 0 0 2px 2px #FF7A00;;
+    box-shadow: 0 0 2px 2px #FF7A00;;
+}
+
+.card:hover ~ .card{
+    transform: translateX(20px);
+}
