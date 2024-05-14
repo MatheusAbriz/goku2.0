@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+    <title>Carrinho</title>
+</head>
+<body onload="dados()" style="background-color: #212121;">
+
+    <!--CABEÇALHO-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="assets/img/logo.jpg" alt="logo do projeto" style="max-width: 120px; height: 55px; border-radius: 15px;"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Início<span class="sr-only">(Página atual)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><img src="assets/img/perfil-usuario.png" alt="icone usuario"></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  </header>
+
+
+
+    <!--seção carrinho-->
+    <section id="login" onload="carrinho();">
+    <div class="container-conteudo">
+            <div class="container-pagamento">
+                <div class="container-info">
+                    <div class="container-img" id="container-img">
+
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: end; flex-direction: column; padding: 20px;">
+                      <select name="Opção pagamento" id="opcaoPagamento">
+                          <option value="cartaoCredito">Cartão de Crédito</option>
+                          <option value="cartaoDebito">Cartão de Débito</option>
+                          <option value="pix">Pix</option>
+                      </select>
+                      <div class="container-descricao">
+                          <p class="produto-total" id="preco-total"></p>
+                          <button onclick="excluirCarrinho()" id="botao-comprar">Comprar</button>
+                      </div>
+                  </div>
+                </div>
+            </div>
+    </div>
+</section>
+      <script src="assets/JSON/app.js"></script>
+      <script src="assets/JSON//carrinho.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
