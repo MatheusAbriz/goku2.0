@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MENU*/
+.navbar-expand-lg{
+    padding: .5rem 2rem !important;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+}
+
+/*Formulário de login*/
+#login{
+    background-color: #F5F5F5;
+    margin: 3rem auto;
+    padding: 1.5rem 1rem;
+    max-width: 750px;
+    border-radius: 10px;
+}
